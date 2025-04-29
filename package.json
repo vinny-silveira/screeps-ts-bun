@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "name": "@vinny-silveira/screeps-ts-bun",
+  "description": "Typescript starter for Screeps powered by Bun",
+  "version": "1.0.0",
+  "homepage": "https://github.com/vinny-silveira/screeps-ts-bun",
+  "license": "Unlicense",
+  "main": "./dist/main.js",
+  "bugs": {
+    "url": "https://github.com/vinny-silveira/screeps-ts-bun/issues",
+    "email": "vinnysilveira09@gmail.com"
+  },
+  "author": {
+    "name": "Vinicius Silveira",
+    "url": "https://github.com/vinny-silveira",
+    "email": "vinnysilveira09@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinny-silveira/screeps-ts-bun.git"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "os": ["linux"],
+  "keywords": ["screeps", "typescript", "ai", "bun", "screeps-ai"],
+  "scripts": {
+    "build": "bun run scripts/build.ts",
+    "upload": "bun run scripts/upload.ts",
+    "preupload": "bun run build",
+    "lint": "bunx biome check .",
+    "lint:fix": "bunx biome check --write --unsafe ."
+  },
+  "dependencies": {
+    "screeps-api": "^1.16.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/lodash": "3.10.1",
+    "@types/node": "^22.15.3",
+    "@types/screeps": "^3.3.8",
+    "tiny-glob": "^0.2.9",
+    "typescript": "^5.8.3"
+  },
+  "trustedDependencies": [
+    "@biomejs/biome",
+    "bufferutil",
+    "utf-8-validate"
+  ]
+}
