@@ -42,9 +42,5 @@
     "tiny-glob": "^0.2.9",
     "typescript": "^5.8.3"
   },
-  "trustedDependencies": [
-    "@biomejs/biome",
-    "bufferutil",
-    "utf-8-validate"
-  ]
+  "trustedDependencies": ["@biomejs/biome", "bufferutil", "utf-8-validate"]
 }
